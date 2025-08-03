@@ -6,6 +6,7 @@
 :root{
     --primary-color: #5d94dd;
     --secundary-color: #dda65d;
+    --secundary-color-hover: rgba(221, 166, 93, .8);
     --text-color: #353535;
     --realce: #85d4e7;
     --concluido: #478b2c;
@@ -82,11 +83,21 @@ header>nav>ul>li{
 }
 
 .add-item>button{
+    cursor: pointer;
     padding: 10px 20px;
     background-color: var(--secundary-color);
     border: none;
     color: white;
     font-weight: 600;
+}
+
+.add-item>button:hover{
+    background-color: var(--secundary-color-hover);
+}
+
+.add-item>button:active{
+    transform: scale(.9);
+    background-color: var(--secundary-color-hover);
 }
 
 .card-list{
